@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*
+Paleta de Cores: 
+    Verde: #49a09d
+    Lilás: #5f2c82
+*/
+
+:root {
+    --cor-verde: #49a09d;
+    --cor-lilas: #5f2c82;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    position: relative;
+    background-image: linear-gradient(to top, var(--cor-verde), var(--cor-lilas));
+}
+
+main {
+    position: absolute;
+    border-radius: 10px;
+    width: 250px;
+    height: 515px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section#formulario {
+    display: block;
+    background-color: white;
+}
+
+section#img {
+    display: block;
+    background-image: url(../imagens/pexels-mateusz-walendzik-17132998.jpg);
+    background-attachment: fixed;
+}
