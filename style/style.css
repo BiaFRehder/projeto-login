@@ -1,7 +1,14 @@
 @charset "UTF-8";
 
 /*
+Typical Devices Breakpoints
+--------------------------------------
 
+Pequenas telas: Até 600px
+Celular:        De 600px até 768px
+Tablet:         De 768px até 992px
+Desktop:        De 992px até 1200px
+Grandes telas:  Acima de 1200px
 */
 
 /*
@@ -41,10 +48,14 @@ section {
     position: absolute;
     background-color: white;
     border-radius: 20px;
+    overflow: hidden;
     width: 250px;
     height: 515px;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 40%);
+    transform: translate(-50%, 50%);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 div#img {
@@ -52,13 +63,12 @@ div#img {
     background-image: url(../imagens/pexels-mateusz-walendzik-17132998.jpg);
     background-position: center center;
     background-size: cover;
-    border-radius: 20px 20px 0px 0px;
     height: 200px;
 }
 
 div#formulario {
     display: block;
-    padding: 10px;
+    padding: 20px;
 }
 
 h1 {
