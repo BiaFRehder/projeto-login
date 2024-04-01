@@ -16,7 +16,7 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="login.php">
+                <form action="login.php" method="post" autocomplete="on">
                     <p class="preencher">
                         <span class="material-symbols-outlined">person</span>
                         <input type="text" name="email" id="iemail" placeholder="seu e-mail">
@@ -24,7 +24,7 @@
                     </p>
                     <p class="preencher">
                         <span class="material-symbols-outlined">vpn_key</span>
-                        <input type="password" name="senha" id="isenha" minlength="8" placeholder="sua senha">
+                        <input type="password" name="senha" id="isenha" minlength="8" placeholder="sua senha" autocomplete="off">
                         <label for="isenha">Senha</label>
                     </p>
                     <p class="botao">

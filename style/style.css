@@ -103,10 +103,14 @@ p.preencher > input {
     background-color: var(--cor-verde-fundo);
     border-radius: 8px;
     border: 0px;
-    width: calc(100% - 45px);
+    width: calc(100% - 44px);
     height: 100%;
     padding: 4px;
     transform: translateY(-5px);
+}
+
+p.preencher > input:focus-within {
+    background-color: white;
 }
 
 p.preencher > label {
@@ -127,6 +131,10 @@ p.botao > input {
     cursor: pointer;
 }
 
+p.botao > input:hover {
+    background-color: var(--cor-verde-escuro);
+}
+
 p.botao > a {
     display: block;
     color: var(--cor-verde-escuro);
@@ -138,6 +146,11 @@ p.botao > a {
     width: 100%;
     height: 40px;
     padding-top: 10px;
+}
+
+p.botao > a:hover {
+    background-color: var(--cor-verde);
+    color: white;
 }
 
 p.botao span {
